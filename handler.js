@@ -438,9 +438,9 @@ module.exports = {
     if (chat.delete) return
     await this.sendButton(m.key.remoteJid, `
 Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
+Hayoloh Oni-chann Ketahuan 🤣
 
-ketik *.on delete* untuk mematikan pesan ini
-`.trim(), '', 'Matikan Antidelete', ',on delete', m.message, {
+`.trim(), 'ωιвυѕσƒт©️ - [CMD] = delete', 'Matikan Antidelete', ',on delete', m.message, {
       contextInfo: {
         mentionedJid: [m.participant]
       }
@@ -474,25 +474,25 @@ ketik *.on delete* untuk mematikan pesan ini
 
     ${desc}
 
-    ketik *.off desc* untuk mematikan pesan ini
+    Onii-chan dah izin ganti desc blm 🥺
         `.trim()
-    this.sendButton(jid, caption, '', 'Matikan Deskripsi', ',off desc', { contextInfo: { mentionedJid: this.parseMention(caption) } })
+    this.sendButton(jid, caption, 'ωιвυѕσƒт©️ - [CMD] = Restrict', 'Matikan Deskripsi', ',off desc', { contextInfo: { mentionedJid: this.parseMention(caption) } })
 
   }
 }
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Pemilik Bot*_',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_',
-    premium: 'Perintah ini hanya untuk pengguna _*Premium*_',
-    group: 'Perintah ini hanya dapat digunakan di grup',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi',
+    rowner: 'Horaaa.. Khusus _*Pemilik Bot*_\nアラアラジ',
+    owner: 'Horaaa.. Khusus _*Pemilik Bot*_\nアラアラジ',
+    mods: 'Khusus _*Moderator*_ Onii-Chann\nアラアラジ',
+    premium: 'Khusus _*Premium*_ Oni-chan mau? Trial 3 hari free chat owner!\nアラアラジ',
+    group: 'Khususs Grup Oni-Chann\nアラアラジ',
+    private: 'Khusus Chat Pribadi Nee-Sama\nアラアラジ',
     admin: 'Perintah ini hanya untuk *Admin* grup',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini',
-    unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Arif.19*',
-    nsfw: 'NSFW tidak aktif'
+    botAdmin: 'Jadikan Bot admin :(',
+    unreg: 'Haiii Onii-Chan\nDaftar Yukk di Wibusoft Bot!\nBot yang mengedepankan Fitur Kewibuan, Terimakasih Telah memakai!\nCaranya Ketik #daftar Nama.Umur',
+    nsfw: 'Fitur Anime Harus aktif!\nMinta ke owner yahh☻'
   }[type]
   if (msg) return m.reply(msg)
 }

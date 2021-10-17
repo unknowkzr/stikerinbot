@@ -1,6 +1,6 @@
 let fs = require('fs')
-global.owner = ['6283128734012', '6288709645535'] // Letakan nomor kamu disini
-global.mods = [] // Moderator?
+global.owner = ['6283844009539', '6281299878753'] // Letakan nomor kamu disini
+global.mods = ['6281299878753', '6283844009539'] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
@@ -28,14 +28,14 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = '❤️'
-global.author = 'ariffb'
+global.packname = 'ωιвυѕσƒт©️'
+global.author = 'Wibuuu'
 
 global.wait = '_*tunggu..*_'
 global.eror = '_*Server Error*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
-global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
+global.multiplier = 200 // Semakin tinggi, semakin sulit naik level
 
 let chalk = require('chalk')
 let file = require.resolve(__filename)
