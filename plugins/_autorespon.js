@@ -14,12 +14,12 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'stikerin tidak aktif' : banned ? 'kamu dibanned' : 'stikerin disini',
-                '© stikerin',
-                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
+                isBanned ? 'ωιвυѕσƒт tidak aktif' : banned ? 'Anda Terbanned!!' : 'ωιвυѕσƒт disini',
+                'ωιвυѕσƒт©️ - _Tag Message_',
+                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu Bot',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
-                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
-                m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi', m)
+                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Changelog Bot!',
+                m.isGroup ? '.ban' : isBanned ? '.unban' : '.changelog', m)
         }
     } catch (e) {
         return
@@ -28,12 +28,15 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.sendButton(m.chat, `┌〔 Undang Bot ke Grup 〕
-├ 7 Hari / Rp 5,000
-├ 30 Hari / Rp 10,000
+├ 7 Hari / Rp 2,000
+├ 30 Hari / Rp 5,000
+├
+├ Ada Event Masuk ke group gratis :v
+├ Yg diadain Sama owner!
 └────
 
-https://github.com/ariffb25/stikerinbot
-`.trim(), '© stikerin', 'Pemilik Bot', ',owner', m)
+
+`.trim(), 'ωιвυѕσƒт©️', 'Pemilik Bot', ',owner', m)
     }
 
     // salam
@@ -60,12 +63,12 @@ https://github.com/ariffb25/stikerinbot
     }
 
     // update status
-    if (new Date() * 1 - setting.status > 1000) {
+    /*if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
         await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} | stikerinbot oleh ariffb`).catch(_ => _)
         setting.status = new Date() * 1
-    }
+    }*/
 
 }
 
